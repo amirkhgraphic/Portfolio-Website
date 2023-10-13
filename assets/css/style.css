@@ -433,18 +433,10 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 525px) {
     .link-text {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .copy {
         font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .link-text {
-        font-size: 1rem;
-    }
-    .copy {
-        font-size: 0.5rem;
+        padding: 0;
     }
 }
