@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <style>
+        @font-face {
+            font-family: "PoetsenOne";
+            src: url("assets/font/PoetsenOne-Regular.ttf");
+        }
+      </style>
+      <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <header id="navbar" class="sticky-header">
+        <span id="mobile-nav" onclick="toggleNavbar()">
+            <svg class="icon" fill="white" width="5rem" height="5rem" viewBox="0 0 512 512">
+              <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+            </svg>
+        </span>
+        <div id="main-menu-content">
+          <a href="#profile" class="main-menu-item">About</a>
+          <a href="#achivements" class="main-menu-item">Achivements</a>
+          <a href="#contact" class="main-menu-item">Contact me</a>
+        </div>  
+        <span id="logo-wrapper">
+          <img id="logo" src="./assets/images/Profile Mo.png" alt="logo" width="50px"/>
+        </span>
+      </header>
+      <div id="menu-content" class="btn hidden fixed-mobile-menu">
+        <a href="#profile" class="menu-item" onclick="toggleNavbar()">About</a>
+        <a href="#achivements" class="menu-item" onclick="toggleNavbar()">Achivements</a>
+        <a href="#contact" class="menu-item" onclick="toggleNavbar()">Contact me</a>
+      </div>
+
+      <main>
+        <section id="profile">
+          <div class="profile-image">
+            <img src="./assets/images/profile.png" alt="profile image">
+          </div>
+          <div class="profile-text">
+            <h1>Amirhossein Khalili</h1>
+            <h4 class="job">Student of Guilan University</h4>
+            <br>
+            <h5 class="techs-title">Technologies</h5>
+            <div class="techs">
+              <div>Python</div>
+              <div>Django</div>
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+              <div>TypeScript</div>
+              <div>Linux</div>
+              <div>Git</div>
+              <div>SQL Databases</div>
+              <div>NoSQL Databases</div>
+              <div>MySQL</div>
+              <div>PostgreSQL</div>
+              <div>Sqlite</div>
+              <div>Reddis</div>
+              <div>MongoDB</div>
+            </div>
+            <br>
+            <br>
+            <h5 class="social-links-title">Checkout</h5>
+            <div class="social-links">
+                <a target="_blank" href="https://github.com/amirkhgraphic"><iconify-icon icon="mdi:github" width="50px"></iconify-icon></a>
+                <a target="_blank" href="https://t.me/Amirkh_MoD"><iconify-icon icon="logos:telegram" width="45px"></iconify-icon></a>
+                <a target="_blank" href="https://quera.org/profile/Amirkh1996"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="55px"><defs><style>.cls-1{fill:none;}.cls-2{fill:#09c;}</style></defs><path class="cls-1" d="M0,.2H150v150H0Z" transform="translate(0 -0.2)"/><path class="cls-2" d="M75.32,12.58A61.65,61.65,0,1,0,137,74.23,61.65,61.65,0,0,0,75.32,12.58Zm36.32,79a18.78,18.78,0,0,1-2.15,8.75L79.33,70.12l-8,8,37.16,37.15-4,4,0,0a30.26,30.26,0,0,0-21.4-8.86H57.92A18.91,18.91,0,0,1,39,91.54V56.73A18.91,18.91,0,0,1,57.92,37.81h34.8a18.92,18.92,0,0,1,18.92,18.92Z" transform="translate(0 -0.2)"/></svg></a>
+            </div>
+          </div>
+        </section>
+        <section id="achivements">
+          <div class="h1-container">
+            <h1>Experiences</h1>
+          </div>
+          <div id="categories">
+            <div class="category">
+              <h5 class="category-title">Projects</h5>
+              <div class="category-content">
+                <a target="_blank" href="https://github.com/amirkhgraphic/BusReservationSystem"><p class="category-items">Final Project (Term 1)</p></a>
+                <a target="_blank" href="https://github.com/amirkhgraphic/Bus-Booking-API-Web"><p class="category-items">Final Project (Term 2)</p></a>
+                <a target="_blank" href="https://github.com/amirkhgraphic/MarvelFutureFight-App"><p class="category-items">MarvelFutureFight Project</p></a>
+                <a target="_blank" href="https://github.com/amirkhgraphic/git-bootcamp-1"><p class="category-items">GitBootcamp Course Project</p></a>
+              </div>
+            </div>
+            
+            <div class="category">
+              <h5 class="category-title">Certificates</h5>
+              <div class="category-content">
+                <span class="certificate">
+                  <a target="_blank" href="https://quera.org/certificate/xioYxw5l"><p class="category-item">Quera College Git</p></a>
+                  <a target="_blank" href="https://quera.org/media/public/quera_certificate/45c537fa18854c7c90f7d18a9212a739.jpg"><iconify-icon icon="ion:image" style="color: white;" width="25"></iconify-icon></a>
+                </span>
+                <span class="certificate">
+                  <a target="_blank" href="https://quera.org/certificate/cHqyyj7p/"><p class="category-item">Quera College Front-End</p></a>
+                  <a target="_blank" href="https://quera.org/media/CACHE/images/public/quera_certificate/bb1621e53b0d453ba7358746c2e0bb2a/6800343a34fcf111f355471f7e9322c2.jpg"><iconify-icon icon="ion:image" style="color: white;" width="25"></iconify-icon></a>
+                </span>
+                <span class="certificate">
+                  <a target="_blank" href="https://quera.org/certificate/8jzgX8zS/"><p class="category-item">Quera College Python</p></a>
+                  <a target="_blank" href="https://quera.org/media/CACHE/images/public/quera_certificate/b9db25d93e4744cf8ea09bc3243cc3ba/490e53cb2fc99aedd5345fa7b6182636.jpg"><iconify-icon icon="ion:image" style="color: white;" width="25"></iconify-icon></a>
+                </span>
+                <span class="certificate">
+                  <a target="_blank" href="https://quera.org/certificate/fOaiDocI/"><p class="category-item">Quera Level-Up Telegram Bot</p></a>
+                  <a target="_blank" href="https://quera.org/media/CACHE/images/public/quera_certificate/df6fd37894274ee5b6410681c7e41732/99d8bc5f95a4d2a8c149a36d85af82b8.jpg"><iconify-icon icon="ion:image" style="color: white;" width="25"></iconify-icon></a>
+                </span>
+                <span class="certificate">
+                  <a target="_blank" href="https://quera.org/certificate/QZ1MthlG"><p class="category-item">Quera Security Hackathon</p></a>
+                  <a target="_blank" href="https://quera.org/media/CACHE/images/public/quera_certificate/7afebe91bbcd4811a3799f87c441415f/434f7148d072537b2d4a505c241eb559.jpg"><iconify-icon icon="ion:image" style="color: white;" width="25"></iconify-icon></a>
+                </span>
+                <span class="certificate">
+                  <a target="_blank" href="https://quera.org/certificate/SmHBNUEU/"><p class="category-item">Quera AI Hackathon</p></a>
+                  <a target="_blank" href="https://quera.org/media/CACHE/images/public/quera_certificate/a212a1a8495b4c1f92ee18566a31df9b/9635622ed2a3a25024971688ddcabc14.jpg"><iconify-icon icon="ion:image" style="color: white;" width="25"></iconify-icon></a>
+                </span>
+              </div>
+            </div>
+            
+            <div class="category">
+              <h5 class="category-title">Jobs</h5>
+              <div class="category-content">
+                <a><p class="category-items">Studying Computer Science in Guilan University</p></a>
+                <a><p class="category-items">Freelancer</p></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="main shadow">
+            <h1>Contact Me</h1>
+            <div class="contact-links">
+              <div class="link">
+                <a><iconify-icon icon="ion:call" style="color: black;" width="50"></iconify-icon></a>
+                <a class="listen">
+                  <span class="copy">(Click to Copy)</span>
+                  <span class="link-text">09388263077 </span>
+                </a>
+              </div>
+              <div class="link">
+                <a target="_blank" href="#"><iconify-icon icon="logos:google-gmail" width="50" height="50"></iconify-icon></a>
+                <a class="listen">
+                  <span class="copy">(Click to Copy)</span>
+                  <span class="link-text">amirhosseinkhalili901@gmail.com </span>
+                </a>
+              </div>
+              <div class="link">
+                <a target="_blank" href="https://github.com/amirkhgraphic"><iconify-icon icon="skill-icons:instagram" width="50"></iconify-icon></a>
+                <a class="listen">
+                  <span class="copy">(Click to Copy)</span>
+                  <span class="link-text">@Amir.Kh.Graphic </span>
+                </a>
+              </div>
+              <div class="link">
+                <a target="_blank" href="https://t.me/Amirkh_MoD"><iconify-icon icon="logos:telegram" width="50"></iconify-icon></iconify-icon></a>
+                <a class="listen">
+                  <span class="copy">(Click to Copy)</span>
+                  <span class="link-text">@Amirkh_MoD </span>
+                </a>
+              </div>
+              <div class="link">
+                <a target="_blank" href="https://github.com/amirkhgraphic"><iconify-icon icon="mdi:github" style="color: black;" width="50"></iconify-icon></a>
+                <a class="listen">
+                  <span class="copy">(Click to Copy)</span>
+                  <span class="link-text">amirkhgraphic </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="icon-set">
+          <a target="_blank" href="https://github.com/amirkhgraphic"><iconify-icon icon="mdi:github" style="color: white;" width="50px"></iconify-icon></a>
+          <a target="_blank" href="https://t.me/Amirkh_MoD"><iconify-icon icon="icon-park-outline:telegram" style="color: white;" width="50"></iconify-icon></a>
+          <a target="_blank" href="https://quera.org/profile/Amirkh1996"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="55px"><defs><style>.cls-3{fill:none;}.cls-4{fill:white;}</style></defs><path class="cls-3" d="M0,.2H150v150H0Z" transform="translate(0 -0.2)"/><path class="cls-4" d="M75.32,12.58A61.65,61.65,0,1,0,137,74.23,61.65,61.65,0,0,0,75.32,12.58Zm36.32,79a18.78,18.78,0,0,1-2.15,8.75L79.33,70.12l-8,8,37.16,37.15-4,4,0,0a30.26,30.26,0,0,0-21.4-8.86H57.92A18.91,18.91,0,0,1,39,91.54V56.73A18.91,18.91,0,0,1,57.92,37.81h34.8a18.92,18.92,0,0,1,18.92,18.92Z" transform="translate(0 -0.2)"/></svg></a>
+          <a target="_blank" href=""><iconify-icon icon="mdi:linkedin" style="color: white;" width="50"></iconify-icon></a>
+        </div>
+        <div class="bottom-footer">
+          <p class="footer-text">
+            &copy; Copyright 2023 - Amirhossein Khalili, All rights reserved.
+          </p>
+          <div class="links">
+            <a href="#profile" onclick="removeSticky()">Home</a>
+            <a href="#achivements" onclick="removeSticky()">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-line"></div>
+    </div>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </body>
+</html>
