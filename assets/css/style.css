@@ -439,12 +439,3 @@ body::-webkit-scrollbar-thumb {
         font-size: 1rem;
     }
 }
-
-@media screen and (max-width: 425px) {
-    .link-text {
-        font-size: 1rem;
-    }
-    .copy {
-        font-size: 0.5rem;
-    }
-}
