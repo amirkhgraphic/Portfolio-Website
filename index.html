@@ -17,25 +17,27 @@
   <body>
     <div class="content">
       <header id="navbar" class="sticky-header">
-        <span id="mobile-nav" onclick="toggleNavbar()">
+        <nav class="navbar">
+          <span id="mobile-nav" onclick="toggleNavbar()">
             <svg class="icon" fill="white" width="5rem" height="5rem" viewBox="0 0 512 512">
               <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
             </svg>
-        </span>
-        <div id="main-menu-content">
-          <a href="#profile" class="main-menu-item">About</a>
-          <a href="#achivements" class="main-menu-item">Achivements</a>
-          <a href="#contact" class="main-menu-item">Contact me</a>
-        </div>  
-        <span id="logo-wrapper">
-          <img id="logo" src="./assets/images/Profile Mo.png" alt="logo" width="50px"/>
-        </span>
+          </span>
+          <div id="main-menu-content">
+            <a href="#profile" class="main-menu-item">About</a>
+            <a href="#achivements" class="main-menu-item">Achivements</a>
+            <a href="#contact" class="main-menu-item">Contact me</a>
+          </div>  
+          <span id="logo-wrapper">
+            <img id="logo" src="./assets/images/Profile Mo.png" alt="logo" width="50px"/>
+          </span>
+        </nav>
+        <div id="menu-content" class="btn hidden fixed-mobile-menu">
+          <a href="#profile" class="menu-item" onclick="toggleNavbar()">About</a>
+          <a href="#achivements" class="menu-item" onclick="toggleNavbar()">Achivements</a>
+          <a href="#contact" class="menu-item" onclick="toggleNavbar()">Contact me</a>
+        </div>
       </header>
-      <div id="menu-content" class="btn hidden fixed-mobile-menu">
-        <a href="#profile" class="menu-item" onclick="toggleNavbar()">About</a>
-        <a href="#achivements" class="menu-item" onclick="toggleNavbar()">Achivements</a>
-        <a href="#contact" class="menu-item" onclick="toggleNavbar()">Contact me</a>
-      </div>
 
       <main>
         <section id="profile">

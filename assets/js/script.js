@@ -1,6 +1,13 @@
 function toggleNavbar () {
     var element = document.getElementById("menu-content");
     element.classList.toggle("show");
+
+    if (element.classList.contains("show")) {
+        element.style.top = "64px"
+        element.style.zIndex = "4"
+    } else {
+        element.style.top = "-200px"
+    }
 }
 
 
