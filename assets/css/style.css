@@ -35,6 +35,7 @@
 html {
     font-size: 10px;
     background-color: var(--background);
+    scroll-behavior: smooth;
 }
 
 * {
@@ -46,12 +47,14 @@ html {
 }
 
 /* Start header */
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
     background: var(--gr1);
     align-items: center;
     box-shadow: 0 0 5rem rgb(0, 0, 0,  0.5);
+    position: relative;
+    z-index: 5;
 }
 
 .sticky-header {
@@ -70,21 +73,31 @@ header {
     background: var(--gr1);
 }
 
-#menu-content {
+/* #menu-content {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+} */
+
+#menu-content {
+    position: absolute;
+    top: -200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+
 }
 
-.hidden {
+/* .hidden {
     visibility: hidden;
     max-height: 0;
-}
-
+} */
+/* 
 .show {
     visibility: visible;
     max-height: max-content;
-}
+} */
 
 .menu-item {
     padding: 1.5rem;
@@ -220,12 +233,14 @@ main {
     background-color: white;
     border-radius: 10%;
     padding-top: 1rem;
+    /* margin-top: 15rem; */
 }
 
 #categories {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
+    /* margin-bottom: 15rem; */
 }
 
 .category {
@@ -437,6 +452,14 @@ body::-webkit-scrollbar-thumb {
     }
     .copy {
         font-size: 1rem;
-        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .link-text {
+        font-size: 1rem;
+    }
+    .copy {
+        font-size: 0.5rem;
     }
 }
